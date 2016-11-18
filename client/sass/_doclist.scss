@@ -3,10 +3,16 @@
   width: 80%;
   color: black;
   @include element('container') {
-   width: 100%;
-   display: block;
+    width: 100%;
+    display: block;
   }
   @include element('element') {
     padding: 5px;
+  }
+  @include element('item') {
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }

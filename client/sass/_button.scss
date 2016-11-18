@@ -1,0 +1,27 @@
+.btn {
+  background: none;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 1em 2em;
+  text-transform: inherit;
+  transition: color 1s;
+}
+
+.btn--submit {
+  $color: #82f6d8;
+  color: $color;
+
+  &:hover {
+    animation: stripes-move 0.75s infinite linear;
+    background: repeating-linear-gradient(45deg, $color 0, $color 0.25em, transparent 0.25em, transparent .5em);
+    color: adjust-hue($color,180);
+  }
+}
+
+@keyframes stripes-move {
+  100% {
+    background-position: 5em 0px;
+  }
+}
