@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:400,700');
+
+$main-font: 'Open Sans', sans-serif;
+$headline: 'Oswald', sans-serif;
+$monospaceFont: "Dosis, Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+
+//
+// Colors
+//
+$link_color: #5cb85c;
+$visited_link_color: $link_color;
+$active_link_color: none;
+
+/*
+  Transitions time to secondary
+*/
+$secondary-sec: 0.7s;
+$secondary-ease: ease-in-out;
+
+
+/*
+ * Default link
+ */
+a {
+  position: relative;
+  color: $link_color;
+  text-decoration: none;
+  transition: color $secondary-sec $secondary-ease;
+  backface-visibility: hidden;
+}
+a::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  height: 0.0em;
+  bottom: -0.08em;
+  left: -0.15em;
+  right: -0.15em;
+  z-index: -1;
+  pointer-events: none;
+  background-color: $link_color;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: height 0.2s cubic-bezier(0.54, 0.08, 0, 1.18),
+  background $secondary-sec $secondary-ease;
+  .dark .secondary & { background-color: $link_color; }
+}
+a:hover::after,
+a.active::after {
+  height: 0.5em;
+}
+
+body {
+  font-family: $main-font;
+}

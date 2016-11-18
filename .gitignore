@@ -1,0 +1,7 @@
+node_modules/
+.meteor
+
+# Ctags dump
+tags
+
+.DS_STORE

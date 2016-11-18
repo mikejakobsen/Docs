@@ -1,0 +1,13 @@
+<template name="docList">
+  <div class="doc__list">
+    <div class="doc__list__container">
+      {{#each documents}}
+      <div class="doc__list__element">
+        <div class="doc__list__item">
+          <a href="/documents/{{_id}}">{{title}}</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

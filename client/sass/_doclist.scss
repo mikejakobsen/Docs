@@ -1,0 +1,12 @@
+.doc__list {
+  margin: 100px auto 0;
+  width: 80%;
+  color: black;
+  @include element('container') {
+   width: 100%;
+   display: block;
+  }
+  @include element('element') {
+    padding: 5px;
+  }
+}
