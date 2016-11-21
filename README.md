@@ -7,6 +7,7 @@ http://www.mikejakobsen.com
 
 School Project. Making a Google Docs "Copy" with the Meteor Stack.
 
+Meteor Notes: https://github.com/mikejakobsen/Meteor
 
 Using: 
 
