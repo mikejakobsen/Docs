@@ -9,6 +9,6 @@ School Project. Making a Google Docs "Copy" with the Meteor Stack.
 
 Meteor Notes: https://github.com/mikejakobsen/Meteor
 
-Using: 
+![Gif](gif.gif)
 
-https://github.com/codemirror/CodeMirror
+It really hates the server.
